@@ -14,13 +14,11 @@ RIPIS is a professional interview preparation platform designed to help students
 
 ## RIPIS Preview
  ![alt text](test.png)
-
-
 ##  Tech Stack
 
--   **Frontend**: React.js, Vite, Vanilla CSS.
+-   **Frontend**: React.js, Vite
 -   **Backend**: Python, FastAPI, SQLite.
--   **UI/UX**: Custom Glassmorphism, JetBrains Mono & Fraunces Typography.
+-   **UI/UX**: Custom Glassmorphism
 
 ---
 
@@ -44,11 +42,21 @@ pip install -r requirements.txt
 ```
 
 #### Environment Configuration
-1. Create a `.env` file in the `backend/` directory:
+
+1. **Create the .env file**: 
+   Copy the example file to create your own configuration:
    ```bash
    cp .env.example .env
    ```
-2. Open `.env` and add your `OPENAI_API_KEY` (if required by your configuration).
+
+2. **Configure Variables**: 
+   Open the `.env` file and set the following values:
+
+| Variable | Description | Required | Default |
+| :--- | :--- | :--- | :--- |
+| `OPENAI_API_KEY` | Your OpenAI API key for reasoning. | Optional/Recommended | None |
+| `SECRET_KEY` | A long random string for JWT security. | **Yes** | (fallback) |
+| `DATABASE_URL` | SQLAlchemy database URL. | No | `sqlite:///./ripis.db` |
 
 #### Start the Server
 ```bash
