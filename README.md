@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 | Variable | Description | Required | Default |
 | :--- | :--- | :--- | :--- |
-| `OPENAI_API_KEY` | Your OpenAI API key for reasoning. 
+| `OPENAI_API_KEY` | Your OpenAI API key for reasoning. | - | -
 
 #### Start the Server
 ```bash
