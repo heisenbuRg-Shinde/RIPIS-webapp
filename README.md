@@ -1,0 +1,69 @@
+# RIPIS - Real-Time Interview Practice Intelligence System
+
+RIPIS is a professional interview preparation platform designed to help students and developers master key concepts in **DSA**, **Operating Systems**, and **DBMS** through structured reasoning, code examples, and an immersive, voice-assisted terminal experience.
+
+![RIPIS Preview](https://via.placeholder.com/800x400.png?text=RIPIS+Hacker+Aesthetic+Interface)
+
+## ✨ Key Features
+
+-   **🧠 Structured Reasoning**: Get hints on Theory, Approach, Pseudocode, and Example Code for $20+$ topics.
+-   **🎙️ Voice Assisted Mode**: Immersive voice output and speech recognition to navigate and prepare hands-free.
+-   **⌨️ Hacker Aesthetic**: A sleek JetBrains Mono powered interface with glassmorphism and high-contrast orange themes.
+-   **📁 Comprehensive Domains**:
+    -   **DSA**: Arrays, Linked Lists, Trees, Graphs, DP, and more.
+    -   **OS**: Process Scheduling, Memory Management, Deadlocks.
+    -   **DBMS**: SQL Queries, Normalization, ACID Properties.
+
+## 🚀 Tech Stack
+
+-   **Frontend**: React.js, Vite, Vanilla CSS.
+-   **Backend**: Python, FastAPI, SQLite.
+-   **UI/UX**: Custom Glassmorphism, JetBrains Mono & Fraunces Typography.
+
+---
+
+## 🛠️ Setup Instructions
+
+### Prerequisites
+- Python 3.8+
+- Node.js 16+
+- npm or yarn
+
+### 1. Backend Setup
+```bash
+cd backend
+python -m venv venv
+# Windows
+.\venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+*Note: The backend will automatically initialize the SQLite database (`ripis.db`) on the first run.*
+
+### 2. Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 📂 Project Structure
+```text
+├── backend/            # FastAPI Project
+│   ├── app/            # Core logic, API, and Services
+│   ├── requirements.txt
+│   └── .env.example
+├── frontend/           # React + Vite Project
+│   ├── src/            # Components, Hooks, and Styles
+│   ├── index.html
+│   └── package.json
+└── README.md
+```
+
+## 📜 License
+MIT
