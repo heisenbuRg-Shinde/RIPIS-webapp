@@ -2,19 +2,21 @@
 
 RIPIS is a professional interview preparation platform designed to help students and developers master key concepts in **DSA**, **Operating Systems**, and **DBMS** through structured reasoning, code examples, and an immersive, voice-assisted terminal experience.
 
-![RIPIS Preview](https://via.placeholder.com/800x400.png?text=RIPIS+Hacker+Aesthetic+Interface)
 
-## ✨ Key Features
+##  Key Features
 
--   **🧠 Structured Reasoning**: Get hints on Theory, Approach, Pseudocode, and Example Code for $20+$ topics.
--   **🎙️ Voice Assisted Mode**: Immersive voice output and speech recognition to navigate and prepare hands-free.
--   **⌨️ Hacker Aesthetic**: A sleek JetBrains Mono powered interface with glassmorphism and high-contrast orange themes.
--   **📁 Comprehensive Domains**:
+-   **Structured Reasoning**: Get hints on Theory, Approach, Pseudocode, and Example Code for $20+$ topics.
+-   **Voice Assisted Mode**: Immersive voice output and speech recognition to navigate and prepare hands-free.
+-   **Comprehensive Domains**:
     -   **DSA**: Arrays, Linked Lists, Trees, Graphs, DP, and more.
     -   **OS**: Process Scheduling, Memory Management, Deadlocks.
     -   **DBMS**: SQL Queries, Normalization, ACID Properties.
 
-## 🚀 Tech Stack
+## RIPIS Preview
+ ![alt text](test.png)
+
+
+##  Tech Stack
 
 -   **Frontend**: React.js, Vite, Vanilla CSS.
 -   **Backend**: Python, FastAPI, SQLite.
@@ -22,7 +24,7 @@ RIPIS is a professional interview preparation platform designed to help students
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Python 3.8+
@@ -39,6 +41,17 @@ python -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+```
+
+#### Environment Configuration
+1. Create a `.env` file in the `backend/` directory:
+   ```bash
+   cp .env.example .env
+   ```
+2. Open `.env` and add your `OPENAI_API_KEY` (if required by your configuration).
+
+#### Start the Server
+```bash
 uvicorn app.main:app --reload
 ```
 *Note: The backend will automatically initialize the SQLite database (`ripis.db`) on the first run.*
@@ -52,7 +65,7 @@ npm run dev
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```text
 ├── backend/            # FastAPI Project
 │   ├── app/            # Core logic, API, and Services
@@ -64,6 +77,3 @@ npm run dev
 │   └── package.json
 └── README.md
 ```
-
-## 📜 License
-MIT
