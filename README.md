@@ -54,15 +54,13 @@ pip install -r requirements.txt
 
 | Variable | Description | Required | Default |
 | :--- | :--- | :--- | :--- |
-| `OPENAI_API_KEY` | Your OpenAI API key for reasoning. | Optional/Recommended | None |
-| `SECRET_KEY` | A long random string for JWT security. | **Yes** | (fallback) |
-| `DATABASE_URL` | SQLAlchemy database URL. | No | `sqlite:///./ripis.db` |
+| `OPENAI_API_KEY` | Your OpenAI API key for reasoning. 
 
 #### Start the Server
 ```bash
 uvicorn app.main:app --reload
 ```
-*Note: The backend will automatically initialize the SQLite database (`ripis.db`) on the first run.*
+*Note: The backend will automatically initialize the SQLite database (`ripis.db`) on the first run. Please run the project on Chrome/Egde browser if willing to use voice assisted mode *
 
 ### 2. Frontend Setup
 ```bash
